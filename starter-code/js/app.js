@@ -130,7 +130,7 @@ fetch("https://worldtimeapi.org/api/ip")
         const [continent, country, city] = timezone.split('/').map(name => name.replace(/_/g, ' '));
 
         gmt.innerHTML = `GMT ${abbreviation}`;
-        loc.innerText = `in ${city}, ${country}`;
+        loc.innerText = city === undefined ? `in ${country}` : `in ${city}, ${country}`;
         timeZone.innerText = `${continent}/${city}`;
         yearDay.innerText = day_of_year;
         weekDay.innerText = day_of_week;
