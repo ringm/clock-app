@@ -131,7 +131,7 @@ fetch("https://worldtimeapi.org/api/ip")
 
         gmt.innerHTML = `GMT ${abbreviation}`;
         loc.innerText = city === undefined ? `in ${country}` : `in ${city}, ${country}`;
-        timeZone.innerText = `${continent}/${city}`;
+        timeZone.innerText = city === undefined ? `${continent}` : `${continent}/${city}`;
         yearDay.innerText = day_of_year;
         weekDay.innerText = day_of_week;
         weekNumber.innerText = week_number;
