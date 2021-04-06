@@ -84,7 +84,7 @@ function updateClock(h, m, s) {
             h = 0;
         }
         if(s === 0) {
-            time.innerHTML = `${h < 10 ? `0${h}` : h}:${m < 10 ? `0${m}` : m}`;
+            time.innerHTML = `${h > 0 && h < 10 ? `0${h}` : h}:${m < 10 ? `0${m}` : m}`;
         }
     }, 1000);
 }
