@@ -149,7 +149,7 @@ body {
     text-transform: uppercase;
     font-weight: 300;
     letter-spacing: 5px;
-    line-height: 20px;
+    line-height: 25px;
 }
 
 @media (min-width: 768px) and (min-height: 540px) {
@@ -229,9 +229,9 @@ body {
         margin-bottom: 60px;
     }
 
-    .main-time-container-col:first-child {
+    /*.main-time-container-col:first-child {
         width: 65%;
-    }
+    }*/
 
     .time {
         font-size: 200px;
