@@ -115,7 +115,7 @@ moreBtn.addEventListener('click', () => moreBtn.checked ? content.style.top = 0 
 
 refresh.addEventListener('click', getQuote);
 
-fetch("http://worldtimeapi.org/api/ip")
+fetch("https://worldtimeapi.org/api/ip")
     .then(res => res.json())
     .then(data => {
         const {
